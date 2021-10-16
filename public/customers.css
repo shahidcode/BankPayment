@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+table{
+    position: absolute;
+    font-size: 1rem;
+    height: 35rem;
+    width: 40rem;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+tr:nth-child(odd) {
+    background-color: #e7e7e7;
+}
+input[type="text"]{
+    font-size: .9rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+input[type="submit"]{
+    cursor: pointer;
+    position: absolute;
+    height: 1.5rem;
+    width: 4rem;
+    bottom: 3%;
+    left: 48%;
+    background-color: #e7e7e7;
+    border: 2px solid;
+    border-radius: 10px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(95, 133, 133);
+}

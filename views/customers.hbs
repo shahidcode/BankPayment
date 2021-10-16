@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/customers.css">
+    <title>Customers</title>
+</head>
+<body>
+
+    {{>header}}
+    <form method="POST">
+    <input type="submit" value="Refresh">
+    <table border="1" cellspacing="3">
+        <tr>
+            <th>SR NO</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>BALANCE</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Amit</th>
+            <th>amit@gmail.com</th>
+            <th><input type="text" value={{amitValue}}></th>            <!-- syntax for declaring variable in hbs -->
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Sneha</th>
+            <th>sneha@gmail.com</th>
+            <th><input type="text" value={{snehaValue}}></th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Bhavesh</th>
+            <th>bhavesh@gmail.com</th>
+            <th><input type="text" value={{bhaveshValue}}></th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Prakash</th>
+            <th>prakash@gmail.com</th>
+            <th><input type="text" value={{prakashValue}}></th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Tejaswini</th>
+            <th>tejaswini@gmail.com</th>
+            <th><input type="text" value={{tejaswiniValue}}></th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>Shreya</th>
+            <th>shreya@gmail.com</th>
+            <th><input type="text" value={{shreyaValue}}></th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>Mayur</th>
+            <th>mayur@gmail.com</th>
+            <th><input type="text" value={{mayurValue}}></th>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>Omkar</th>
+            <th>omkar@gmail.com</th>
+            <th><input type="text" value={{omkarValue}}></th>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>Kunal</th>
+            <th>kunal@gmail.com</th>
+            <th><input type="text" value={{kunalValue}}></th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>Payal</th>
+            <th>payal@gmail.com</th>
+            <th><input type="text" value={{payalValue}}></th>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

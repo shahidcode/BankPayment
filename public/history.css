@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    text-align: center;
+}
+.container h1{
+    position: relative;
+    top: 8rem;
+    text-decoration: underline rgb(40, 204, 149);
+}
+.container p{
+    position: relative;
+    top:12rem;
+
+}
+table{
+    position: absolute;
+    font-size: 1rem;
+    height: 25rem;
+    width: 45rem;
+    top: 15rem;
+    left: 28%;
+}
+input[type="submit"]{
+    cursor: pointer;
+    position: absolute;
+    height: 1.5rem;
+    width: 4rem;
+    top: 12rem;
+    left: 48%;
+    background-color: #e7e7e7;
+    border: 2px solid;
+    border-radius: 10px;
+}
+input[type="button"]:hover{
+    background-color: #e9c6c6;
+}

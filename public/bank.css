@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.header{
+    position: absolute;
+    background-color: black;
+    top:0;
+    left:0;
+    height: 5rem;
+    width: 100%;
+}
+.header .logo{
+    position: relative;
+    margin: 1.5rem;
+}
+.header .logo h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.header .logo h1 span{
+    color: rgb(61, 228, 150);
+}
+
+.menu{
+    position: relative;
+}
+.menu ul{
+    position: relative;
+    display: flex;
+    float: right;
+    top: -3rem;
+}
+.menu ul li{
+    color: white;
+    list-style: none;
+    margin-right: 3.5rem;
+    
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header .menu ul li a:hover{
+    border-bottom: .1rem solid rgb(61, 228, 150);
+}
+
+.main{
+    position: relative;
+}
+.main .one{
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+}
+.main .one img{
+    background-size: cover;
+}
+
+.options{
+    position: absolute;
+    top: 28rem;
+    right: 10%;
+}
+.options input[type="button"]{
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(32, 32, 32);
+    padding: 1rem;
+    border-radius: .4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.options input[type="button"]:hover{
+    background-color: rgb(51, 51, 51);
+}

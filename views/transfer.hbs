@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/transfer.css">
+    <title>Transfer</title>
+</head>
+<body>
+    
+    {{>header}}
+
+    <img class="one" src="/img/monneyTree.jpg">
+
+<form onsubmit=validate() method="POST">
+    <div class="container">
+        <select id="selectOne">
+            <option name="Sender" value="Sender">Select Sender</option>    
+            <option name="Amit" value="Amit">Amit</option>
+            <option name="Sneha" value="Sneha">Sneha</option>
+            <option name="Bhavesh" value="Bhavesh">Bhavesh</option>
+            <option name="Prakash" value="Prakash">Prakash</option>
+            <option name="Tejaswini" value="Tejaswini">Tejaswini</option>
+            <option name="Shreya" value="Shreya">Shreya</option>
+            <option name="Mayur" value="Mayur">Mayur</option>
+            <option name="Omkar" value="Omkar">Omkar</option>
+            <option name="Kunal" value="Kunal">Kunal</option>
+            <option name="Payal" value="Payal">Payal</option>
+       </select>
+   
+       <select id="selectTwo">
+           <option name="Reciever" value="Reciever">Select Reciver</option>
+           <option name="Amit" value="Amit">Amit</option>
+           <option name="Sneha" value="Sneha">Sneha</option>
+           <option name="Bhavesh" value="Bhavesh">Bhavesh</option>
+           <option name="Prakash" value="Prakash">Prakash</option>
+           <option name="Tejaswini" value="Tejaswini">Tejaswini</option>
+           <option name="Shreya" value="Shreya">Shreya</option>
+           <option name="Mayur" value="Mayur">Mayur</option>
+           <option name="Omkar" value="Omkar">Omkar</option>
+           <option name="Kunal" value="Kunal">Kunal</option>
+           <option name="Payal" value="Payal">Payal</option>
+      </select>
+      
+        <input type="number" name="amount" placeholder="Enter amount" value="">
+        <input type="reset" placeholder="clear">
+      <input type="submit" name="Send"> 
+
+      <input type="hidden" name="hidden1" id="e1val">       <!-- transfering javascript value to nodejs-->
+      <input type="hidden" name="hidden2" id="e2val">
+    </div>
+</form>
+
+    <script>
+
+        function validate(){
+            x = document.getElementById("selectOne");
+            y =  document.getElementById("selectTwo");
+
+            if(x.value == "Sender" || y.value == "Reciever"){
+                alert("please select sender and reciever");
+            }
+            else{
+                const e1 = document.querySelector('#selectOne');
+                const output1 = e1.value;
+                const e2 = document.querySelector('#selectTwo');
+                const output2 = e2.value;
+
+                var input1 = document.getElementById('e1val');
+                input1.value = output1;
+
+                var input2 = document.getElementById('e2val');
+                input2.value = output2;
+
+                alert("Transfer success");
+            }
+        }
+
+    </script>
+     
+</body>
+</html>
